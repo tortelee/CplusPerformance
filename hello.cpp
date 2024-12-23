@@ -1,3 +1,7 @@
+// This file benchmarks string creation and string copying using the Google Benchmark library.
+// 
+// History:
+// 2023-10-05: Initial creation of benchmark for string creation and copying.
 #include <iostream>
 
 #include <benchmark/benchmark.h>
