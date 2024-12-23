@@ -28,4 +28,21 @@ static void BM_StringCopy(benchmark::State& state)
 
 BENCHMARK(BM_StringCopy);
 
-BENCHMARK_MAIN();
+#define setiterms processed    
+void processItems(int& item)
+{
+  item*=2;
+}
+
+static void BM_ProcessItems(benchmark::State& state)
+{
+    std::vector<int> data(state.range(0), 1);
+    for(auto _: state)
+      std::for_each(data.begin(), data.end(), processItems);
+
+    state.SetItemsProcessed( state.iterations() * state.range(0) ); 
+}
+
+BENCHMARK(BM_ProcessItems) ->Arg(1<<2) ->Arg(1<<5);
+
+BENCHMARK_MAIN(); 
