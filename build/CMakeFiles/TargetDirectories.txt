@@ -1,0 +1,3 @@
+C:/workdir/helloWorld/build/CMakeFiles/hello.dir
+C:/workdir/helloWorld/build/CMakeFiles/edit_cache.dir
+C:/workdir/helloWorld/build/CMakeFiles/rebuild_cache.dir
