@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.10)
 project(HelloWorld)
 
 # Add an executable
-add_executable(hello hello.cpp)
+add_executable(hello hello.cpp chapterFith.cpp)
 
 # Collect all .cpp files in the project directory
 #file(GLOB_RECURSE ALL_CPP_FILES "${CMAKE_SOURCE_DIR}/*.cpp")
