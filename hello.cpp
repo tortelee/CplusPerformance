@@ -12,7 +12,7 @@ static void BM_StringCreation(benchmark::State& state) {
   }
 }
 
-BENCHMARK(BM_StringCreation);
+//BENCHMARK(BM_StringCreation);
 
 #define another benchmark
 
@@ -26,7 +26,7 @@ static void BM_StringCopy(benchmark::State& state)
 
 }
 
-BENCHMARK(BM_StringCopy);
+//BENCHMARK(BM_StringCopy);
 
 #define setiterms processed    
 void processItems(int& item)
@@ -43,6 +43,6 @@ static void BM_ProcessItems(benchmark::State& state)
     state.SetItemsProcessed( state.iterations() * state.range(0) ); 
 }
 
-BENCHMARK(BM_ProcessItems) ->Arg(1<<2) ->Arg(1<<5);
+//BENCHMARK(BM_ProcessItems) ->Arg(1<<2) ->Arg(1<<5);
 
 BENCHMARK_MAIN(); 
